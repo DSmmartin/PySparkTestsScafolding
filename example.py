@@ -6,5 +6,4 @@ sc = spark.sparkContext
 
 # Sum of the first 100 whole numbers
 rdd = sc.parallelize(range(100 + 1))
-rdd.sum()
-# 5050
+print(f'Sum of the first 100 whole numbers: {rdd.sum()}')
